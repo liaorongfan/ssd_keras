@@ -150,7 +150,7 @@ class AnchorBoxes(Layer):
         # Compute box width and height for each aspect ratio
         # The shorter side of the image will be used to compute `w` and `h` using `scale` and `aspect_ratios`.
         size = min(self.img_height, self.img_width)
-        # Compute the box widths and and heights for all aspect ratios
+        # Compute the box widths and heights for all aspect ratios
         wh_list = []
         for ar in self.aspect_ratios:
             if (ar == 1):
